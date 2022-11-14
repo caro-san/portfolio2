@@ -20,6 +20,7 @@ const Home = () => {
             <Header />
 
             <Particles 
+            id="particles"
             canvasClassName={classes.particlesCanva}
                 params={{
                     "particles":{
@@ -44,7 +45,7 @@ const Home = () => {
                         "stroke":{
                             "width": 1,
                             "color":{
-                                "value": "#ff6347"}
+                                "value": "#c60156"}
                         },
                         "size":{
                             "value":5,

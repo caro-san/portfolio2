@@ -1,7 +1,99 @@
-body{
-  background: url(./images/coffee-apple.jpg) no-repeat center center fixed;
-  -webkit-background:cover;
-  -moz-background:cover;
-  -o-background:cover;
-  background:cover;
+/************
+colors:
+#EECBCA
+#DD9FA0
+#AA7C8A
+#2E2931
+#573636
+
+#252830
+#13141D
+#F5DBDE
+
+#303437
+
+#4C4C4B
+#DFB2A9
+
+
+#05070B #060e19
+#08171E
+#DAA8A4
+#E6B7B3
+#E7C0BC
+#D7D7D7
+
+#0F1626
+#AB987A
+
+
+#E27C91
+#0c084c
+**************/
+
+body {
+  background: url(./images/fondo-rosa2.jpg) no-repeat center center fixed;
+  -webkit-background: cover;
+  -moz-background: cover;
+  -o-background: cover;
+  background-size: cover;
+
+}
+
+/* Portfolio page CSS */
+
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Resume Page CSS */
+
+.resume-right-col {
+  background: #303437;
+  color: white;
+  padding: 2em;
+}
+
+ul .lista li::before{
+  color: #B76E79;
+
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #box-header{
+    top: 45em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #box-header{
+    top: 45em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #box-header{
+    top: 45em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #box-header{
+    top: 45em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #box-header{
+    top: 45em;
+  }
 }
