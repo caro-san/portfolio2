@@ -5,14 +5,14 @@ import MobilRightMenuSlider from '@material-ui/core/Drawer';
 import Footer from './Footer';
 import {AppBar, Toolbar, ListItem, IconButton, ListItemText, 
     Avatar, Divider, List, Typography, Box, ListItemIcon} from '@material-ui/core';
-import { Home, Apps, ContactMail, Menu, PermIdentity} from '@material-ui/icons';
-import avatar from '../images/avatar.png';
+import { Home, Apps, Menu, PermIdentity} from '@material-ui/icons';
+import avatar from '../images/foto-pri-300x300.png';
 
 // CSS STYLES
 const useStyles = makeStyles(theme => ({
     menuSliderContainer:{
         width: 325,
-        background: "#511",
+        background: "#08171E",
         height:"100%"
     },
     avatar: {
@@ -22,33 +22,27 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(13)
     },
     listItem:{
-        color: "tan"
-    }
+        color: "#E0BCBF",
+    },
 }));
 
 const menuItems = [
     {
-        listIcon : <Home/>,
-        listText: "Home",
+        listIcon : <Home style={{ fontSize: 30}}/>,
+        listText: "Inicio",
         listPath: "/"
     },
 
     {
-        listIcon : <PermIdentity/>,
-        listText: "Resume",
+        listIcon : <PermIdentity style={{ fontSize: 30}}/>,
+        listText: "Resumen",
         listPath: "/resume"
     },
 
     {
-        listIcon : <Apps/>,
+        listIcon : <Apps style={{ fontSize: 30}}/>,
         listText: "Portfolio",
         listPath: "/portfolio"
-    },
-
-    {
-        listIcon : <ContactMail/>,
-        listText: "Contact",
-        listPath: "/contact"
     }
 ]
 
@@ -90,22 +84,24 @@ const Navbar = () => {
                 </ListItem>
             </List>
         </Box>
-    )
+    );
+
     return (
     <> 
         
-
-
         <Box component='nav'>
-            <AppBar position="static" style={{background:"#222"}}>
+            <AppBar position="sticky" style={{background:"#05070B"}}>
+
+        
+
                 <Toolbar>
                     <IconButton onClick={toggleSlider("right", true)}>
                         <Menu 
-                            style={{color: 'tomato'}}
+                            style={{color: '#E0BCBF', fontSize:"35px"}}
                         />
                     </IconButton>
-                    <Typography variant="h5" style={{color:'tan'}}>
-                        Portfolio
+                    <Typography variant="h4" style={{color:'#b76e79'}}>
+                        Menu
                     </Typography>
 
                     <MobilRightMenuSlider
